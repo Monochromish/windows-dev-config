@@ -49,6 +49,12 @@ Apply additional configurations as needed:
 - LM Studio on Windows on Arm installs a CPU-only runtime. Install the CUDA runtime with `lms runtime get llama.cpp-win-arm64-nvidia-cuda13 --allow-incompatible -y`, then select it with `lms runtime select`.
 - `scripts/llm-bench.ps1 [model]` reports hardware and Ollama throughput for a model (default `qwen3.8:27b`).
 
+## CPU watchdog
+
+`scripts/cpu-watchdog/install.ps1` installs a scheduled task that checks every 5 minutes and shows a notification when a Windows background component (anything under `C:\Windows` or a built-in Microsoft app) uses more than 60% of a core for two consecutive checks. User-launched apps, games, compilers and the foreground window are never flagged; shells, WSL, Defender, Windows Update and search indexing are excluded.
+
+Thresholds and the ignore list are in `config.json` in the install folder (`%USERPROFILE%\Scripts\cpu-watchdog` by default); alerts are logged to `watchdog.log` next to it. Test notifications with `cpu-watchdog.ps1 -TestNotification`. Remove it by deleting the "CPU Watchdog" task in Task Scheduler.
+
 ## Windows on Arm
 
 - The Arm GNU Toolchain, GNU Make and OpenOCD have no native Arm64 builds and run under emulation.

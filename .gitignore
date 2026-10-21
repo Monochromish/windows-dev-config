@@ -2,3 +2,5 @@
 *.log
 .env
 *.local.*
+state.json
+watchdog.log

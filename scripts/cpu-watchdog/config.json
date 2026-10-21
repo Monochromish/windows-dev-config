@@ -1,0 +1,33 @@
+{
+    "intervalMinutes": 5,
+    "thresholdPercent": 60,
+    "consecutiveChecks": 2,
+    "cooldownMinutes": 60,
+    "watchPaths": [
+        "C:\\Windows\\",
+        "C:\\Program Files\\WindowsApps\\Microsoft"
+    ],
+    "ignore": [
+        "cmd",
+        "conhost",
+        "OpenConsole",
+        "WindowsTerminal",
+        "powershell",
+        "pwsh",
+        "wsl",
+        "wslservice",
+        "wslhost",
+        "vmmem",
+        "vmmemWSL",
+        "MsMpEng",
+        "MpDefenderCoreService",
+        "TiWorker",
+        "TrustedInstaller",
+        "MoUsoCoreWorker",
+        "SearchIndexer",
+        "CompatTelRunner",
+        "msiexec",
+        "dism",
+        "DismHost"
+    ]
+}
