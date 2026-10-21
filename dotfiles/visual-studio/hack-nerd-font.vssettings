@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserSettings>
+  <ApplicationIdentity version="18.0"/>
+  <ToolsOptions/>
+  <Category name="Environment_Group" RegisteredName="Environment_Group">
+    <Category name="Environment_FontsAndColors" Category="{1EDA5DD4-927A-43a7-810E-7FD247D0DA1D}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_FontsAndColors" PackageName="Visual Studio Environment Package">
+      <PropertyValue name="Version">2</PropertyValue>
+      <FontsAndColors Version="2.0">
+        <Categories>
+          <Category GUID="{A27B4E24-A735-4D1D-B8E7-9716E1E3D8E0}" FontName="Hack Nerd Font Mono" FontSize="11" CharSet="1" FontIsDefault="No"/>
+          <Category GUID="{9973EFDF-317D-431C-8BC1-5E88CBFD4F7F}" FontName="Hack Nerd Font Mono" FontSize="10" CharSet="1" FontIsDefault="No"/>
+        </Categories>
+      </FontsAndColors>
+    </Category>
+  </Category>
+</UserSettings>

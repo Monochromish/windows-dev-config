@@ -1,0 +1,52 @@
+{
+    "editor.fontFamily": "'Hack Nerd Font', Consolas, 'Courier New', monospace",
+    "editor.fontSize": 14,
+    "editor.lineHeight": 1.5,
+    "terminal.integrated.fontFamily": "'Hack Nerd Font'",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": false,
+    "editor.stickyScroll.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "editor.linkedEditing": true,
+    "editor.renderWhitespace": "trailing",
+    "editor.smoothScrolling": true,
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.inlayHints.enabled": "onUnlessPressed",
+    "workbench.list.smoothScrolling": true,
+    "terminal.integrated.smoothScrolling": true,
+
+    "files.autoSave": "onFocusChange",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+
+    "git.autofetch": true,
+    "git.pruneOnFetch": true,
+    "git.confirmSync": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+
+    "telemetry.telemetryLevel": "off",
+
+    "biome.requireConfiguration": true,
+    "[javascript]": { "editor.defaultFormatter": "biomejs.biome" },
+    "[javascriptreact]": { "editor.defaultFormatter": "biomejs.biome" },
+    "[typescript]": { "editor.defaultFormatter": "biomejs.biome" },
+    "[typescriptreact]": { "editor.defaultFormatter": "biomejs.biome" },
+    "[json]": { "editor.defaultFormatter": "biomejs.biome" },
+    "[jsonc]": { "editor.defaultFormatter": "biomejs.biome" },
+    "[css]": { "editor.defaultFormatter": "biomejs.biome" },
+    "[vue]": { "editor.defaultFormatter": "Vue.volar" },
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.codeActionsOnSave": { "source.organizeImports.ruff": "explicit" }
+    },
+    "[lua]": { "editor.defaultFormatter": "JohnnyMorganz.stylua" },
+    "[markdown]": { "files.trimTrailingWhitespace": false },
+
+    "Lua.workspace.checkThirdParty": false,
+    "Lua.telemetry.enable": false
+}

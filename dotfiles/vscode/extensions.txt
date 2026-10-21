@@ -1,0 +1,8 @@
+anthropic.claude-code
+biomejs.biome
+charliermarsh.ruff
+JohnnyMorganz.stylua
+ms-python.python
+ms-python.vscode-pylance
+sumneko.lua
+Vue.volar

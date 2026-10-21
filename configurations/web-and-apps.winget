@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+properties:
+  configurationVersion: 0.2.0
+  resources:
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: bun
+      directives:
+        description: Bun
+      settings:
+        id: Oven-sh.Bun
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: docker
+      directives:
+        description: Docker Desktop (requires WSL 2)
+      settings:
+        id: Docker.DockerDesktop
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: bruno
+      directives:
+        description: Bruno
+      settings:
+        id: Bruno.Bruno
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: github-desktop
+      directives:
+        description: GitHub Desktop
+      settings:
+        id: GitHub.GitHubDesktop
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: stylua
+      directives:
+        description: StyLua
+      settings:
+        id: JohnnyMorganz.StyLua
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: lua-ls
+      directives:
+        description: Lua Language Server
+      settings:
+        id: LuaLS.lua-language-server
+        source: winget

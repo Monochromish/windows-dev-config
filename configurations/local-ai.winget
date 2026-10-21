@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+properties:
+  configurationVersion: 0.2.0
+  resources:
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: ollama
+      directives:
+        description: Ollama
+      settings:
+        id: Ollama.Ollama
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: lmstudio
+      directives:
+        description: LM Studio
+      settings:
+        id: ElementLabs.LMStudio
+        source: winget

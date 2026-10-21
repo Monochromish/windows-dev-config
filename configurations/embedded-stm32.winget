@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+properties:
+  configurationVersion: 0.2.0
+  resources:
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: arm-gnu-toolchain
+      directives:
+        description: Arm GNU Toolchain 13.2.rel1
+        securityContext: elevated
+      settings:
+        id: Arm.GnuArmEmbeddedToolchain
+        version: '13.2 2023.10'
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: make
+      directives:
+        description: GNU Make
+      settings:
+        id: ezwinports.make
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: openocd
+      directives:
+        description: xPack OpenOCD
+      settings:
+        id: xpack-dev-tools.openocd-xpack
+        source: winget
